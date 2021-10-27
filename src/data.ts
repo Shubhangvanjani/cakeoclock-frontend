@@ -7,19 +7,21 @@ interface product{
     brand: string;
     rating: number;
     numReviews: number;
-    description: string
+    description: string;
+    countInStock: number;
 }
 const products: product[] = [
     {
         _id: '1',
         name: 'Black Forest',
         category: 'Cakes',
-        image: './images/p1.jpg',
+        image: '../images/p1.jpg',
         price: 350,
         brand: '',
         rating: 4.5,
         numReviews: 10,
-        description: 'Best Quality Cake'
+        description: 'Best Quality Cake',
+        countInStock:10
     },
     {
         _id: '2',
@@ -30,7 +32,8 @@ const products: product[] = [
         brand: '',
         rating: 4,
         numReviews: 10,
-        description: 'Best Quality Cake'
+        description: 'Best Quality Cake',
+        countInStock:20
     },
     {
         _id: '3',
@@ -41,7 +44,8 @@ const products: product[] = [
         brand: '',
         rating: 4.5,
         numReviews: 10,
-        description: 'Best Quality Cake'
+        description: 'Best Quality Cake',
+        countInStock:0
     },
     {
         _id: '4',
@@ -52,7 +56,8 @@ const products: product[] = [
         brand: '',
         rating: 5,
         numReviews: 10,
-        description: 'Best Quality Cake'
+        description: 'Best Quality Cake',
+        countInStock:15
     },
     {
         _id: '5',
@@ -63,7 +68,8 @@ const products: product[] = [
         brand: '',
         rating: 4.5,
         numReviews: 10,
-        description: 'Best Quality Cake'
+        description: 'Best Quality Cake',
+        countInStock:5
     },
     {
         _id: '6',
@@ -74,7 +80,8 @@ const products: product[] = [
         brand: '',
         rating: 4,
         numReviews: 10,
-        description: 'Best Quality Cake'
+        description: 'Best Quality Cake',
+        countInStock:5
     },
 
 ]

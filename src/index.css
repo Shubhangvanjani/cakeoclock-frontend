@@ -64,6 +64,34 @@ a{
 a:hover{
   color: #ff8000;
 }
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li{
+  margin: 1rem;
+}
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border:0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+button.primary{
+  background-color: #f0c040;
+}
+button.block{
+  width: 100%;
+}
+button:hover{
+  border: 0.1rem #404040 solid;
+}
 header a{
   color: #ffffff;
   padding: 1rem;
@@ -83,7 +111,16 @@ a.brand{
 .row.center{
   justify-content: center;
 }
+.row.top{
+  align-items: flex-start;
+}
 
+.col-1{
+  flex: 1 1 25rem;
+}
+.col-2{
+  flex: 2 1 50rem;
+}
 /* Image */
 img{
   border-radius: 0.5rem;
@@ -91,6 +128,10 @@ img{
 img.medium{
   max-width: 290rem;
   width: 100%;
+}
+
+img.large{
+  width: 50%;
 }
 
 /* Card */
@@ -114,4 +155,13 @@ img.medium{
 .rating span{
   color: #f0c040;
   margin: 0.1rem;
+}
+.rating span:last-child{
+  color: #000000;
+}
+.success{
+  color: #20a020;
+}
+.error{
+  color: #a02020;
 }
