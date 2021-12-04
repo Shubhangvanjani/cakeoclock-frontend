@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { RouteComponentProps } from 'react-router';
 import Ratings from '../components/Rating';
 import { products } from '../data';
@@ -10,6 +10,7 @@ type TParams = {
 
 function ProductScreen({match}: RouteComponentProps<TParams>) {
     const product = products.find((item) => item._id === match.params.id)
+
     if(!products){
         return(
             <div>Product Not Found</div>
