@@ -1,17 +1,18 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import { productListReducer } from './redux/reducers/productReducers';
+import { productDetailsReducer, productListReducer } from './redux/reducers/productReducers';
 
-type initStateType = {
-    products: [] | null
-}
+// type initStateType = {
+//     products: [] | null
+// }
 
 const initialState:any = {
-    products: null
+    // products: null
 };
 const reducer = combineReducers({
     productList: productListReducer,
+    productDetails:productDetailsReducer
 })
-// const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-export const store = createStore(reducer, initialState, compose(applyMiddleware(thunk)));
+const composeEnhancer = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ()|| compose;
+export const store = createStore(reducer, initialState, compose(applyMiddleware(thunk),  composeEnhancer));
 

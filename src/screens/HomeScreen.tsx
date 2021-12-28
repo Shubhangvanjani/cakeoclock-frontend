@@ -21,7 +21,7 @@ function HomeScreen() {
             : (
             <div className="row center">
               {
-                productList.map((item:any) => (
+                productList.products.map((item:any) => (
                   <Product _id={item._id} product={item} key={item._id}></Product>
                 ))
               }
