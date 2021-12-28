@@ -37,7 +37,7 @@ function ProductScreen({match}: RouteComponentProps<TParams>) {
                 <Link to='/'> Back to results</Link>
                 <div className='row top'>
                     <div className="col-2">
-                        <img className='large' src={product?.image}></img>
+                        <img className='large' src={product?.image} alt="Product"></img>
                     </div>
                     <div className="col-1">
                         <ul>

@@ -1,6 +1,6 @@
 import Rating from './Rating'
 
-type Product = {
+type ProductType = {
     name: string
     category: string,
     image: string,
@@ -13,7 +13,7 @@ type Product = {
 
 type ProductProps = {
     _id: string
-    product: Product
+    product: ProductType
 }
 
 export default function Product(props:ProductProps) {

@@ -1,8 +1,8 @@
-import axios, { AxiosRequestHeaders } from 'axios';
+import axios from 'axios';
 // import interceptor from './interceptor/interceptor'
 // eslint-disable-next-line
 
-export default {
+const api : any = {
   request: async (
     method : 'get' | 'post' | 'put',
     uri: string,
@@ -28,3 +28,4 @@ export default {
     }
   },
 };
+export default api
